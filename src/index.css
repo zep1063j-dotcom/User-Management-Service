@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+/* .dark 클래스가 붙은 조상 아래에서 dark: 유틸리티가 적용되도록 설정
+   (OS 설정과 무관하게 사용자가 직접 라이트/다크를 선택할 수 있게 함) */
+@custom-variant dark (&:where(.dark, .dark *));
