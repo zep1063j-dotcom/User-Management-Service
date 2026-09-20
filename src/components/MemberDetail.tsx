@@ -184,8 +184,8 @@ export default function MemberDetail({
   };
 
   const handleCheckIn = () => {
-    runAction(() => {
-      checkIn(member.id, member.branch_name, membership);
+    runAction(async () => {
+      await checkIn(member.id, member.branch_name, membership);
     });
   };
 
